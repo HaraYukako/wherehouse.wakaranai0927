@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8"/>
+<link th:href="@{/css/reset.css}" href="../../static/css/reset.css" rel="stylesheet"></link>
+<link th:href="@{/css/warehouse.css}" href="../../static/css/warehouse.css" rel="stylesheet"></link>
+<title>商品削除画面（完了）</title>
+</head>
+<body>
+	<header>
+		<h1>ぬる商事 本社</h1>
+	</header>
+	<form method="post" th:action="@{/goods/delete/input}" th:object="${goods}">
+		<p>
+			以下の商品を削除しました。
+		</p>
+		<br/>
+		<table>
+			<tr>
+				<th>商品コード</th>
+				<td th:text="*{code}">100</td>
+			</tr>
+			<tr>
+				<th>商品名</th>
+				<td th:text="*{name}">鉛筆</td>
+			</tr>
+			<tr>
+				<th>価格</th>
+				<td th:text="*{price}">300</td>
+			</tr>
+		</table>
+		<div>
+			<br/> <input type="submit" value="了解" /><br/> <br/>
+			<a th:href="@{/goods}">本社メニューへ</a>
+		</div>
+	</form>
+	<footer>
+		<address>Copyright(C)20xx ぬる商事 Allright Reserved.</address>
+	</footer>
+</body>
+</html>
