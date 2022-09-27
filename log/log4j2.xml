@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration xmlns="http://logging.apache.org/log4j/2.0/config" status="off">
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS}  %-5level         [%t] %logger{36} : %msg%n"/>
+		</Console>
+		<RollingFile name="logfile" append="true" fileName="./log/17WebWarehouse.log"
+			filePattern="./log/17WebWarehouse-%i.log">
+			<PatternLayout>
+				<pattern>%d{yyyy/MM/dd HH:mm:ss.SSS} [%-6p][%t] %C.%M :%m%n</pattern>
+			</PatternLayout>
+			<Policies>
+				<OnStartupTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="100MB"/>
+			</Policies>
+			<DefaultRolloverStrategy max="3"/>
+		</RollingFile>
+	</Appenders>
+
+	<Loggers>
+		<!-- <Logger name="com.example" level="info">
+			<AppenderRef ref="Console"/>
+			<AppenderRef ref="logfile"/>
+		</Logger>
+		<Logger name="com.example.log" level="info">
+			<AppenderRef ref="Console"/>
+			<AppenderRef ref="logfile"/>
+        	</Logger>
+		<Logger name="log" level="info">
+			<AppenderRef ref="Console"/>
+			<AppenderRef ref="logfile"/>
+        	</Logger>-->
+		<Root level="info">
+			<AppenderRef ref="Console"/>
+			<AppenderRef ref="logfile"/>
+		</Root>
+	</Loggers>
+</Configuration>

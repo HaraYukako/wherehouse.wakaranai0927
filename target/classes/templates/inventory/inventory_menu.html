@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8"/>
+<link th:href="@{/css/reset.css}" href="../../static/css/reset.css" rel="stylesheet"></link>
+<link th:href="@{/css/warehouse.css}" href="../../static/css/warehouse.css" rel="stylesheet"></link>
+<title>在庫管理：メニュー画面</title>
+</head>
+<body>
+	<header>
+		<h1>ぬる商事 倉庫</h1>
+	</header>
+	<div>
+		<ul>
+			<li><a th:href="@{/inventory/stock_list}">在庫一覧</a></li>
+			<li><a th:href="@{/inventory/stock_find/input}">在庫検索</a></li>
+			<li><a th:href="@{/inventory/stock_create/input}">在庫商品登録</a></li>
+			<li><a th:href="@{/inventory/stock_delete/input}">在庫商品削除</a></li>
+			<li><a th:href="@{/inventory/receiving_order/input}">在庫商品入荷</a></li>
+		</ul>
+	</div>
+	<div>
+		<br/>
+		<a th:href="@{/}">ぬる商事メインメニューへ</a>
+	</div>
+	<footer>
+		<address>Copyright(C)20xx ぬる商事 Allright Reserved.</address>
+	</footer>
+</body>
+</html>

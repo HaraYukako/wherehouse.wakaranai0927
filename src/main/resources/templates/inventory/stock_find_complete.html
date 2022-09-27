@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8"/>
+<link th:href="@{/css/reset.css}" href="../../static/css/reset.css" rel="stylesheet"></link>
+<link th:href="@{/css/warehouse.css}" href="../../static/css/warehouse.css" rel="stylesheet"></link>
+</head>
+<body>
+	<header>
+		<h1>ぬる商事 倉庫</h1>
+	</header>
+	<form method="get" th:action="@{/inventory/stock_find/input}">
+		<table>
+			<tr>
+				<th>商品コード</th>
+				<td th:text="${stock.goodsCode}">100</td>
+			</tr>
+			<tr>
+				<th>在庫数</th>
+				<td th:text="${stock.quantity}">10</td>
+			</tr>
+		</table>
+		<div>
+			<br/><input type="submit" value="戻る" /><br/>
+			<br/><a th:href="@{/inventory}">倉庫メニューへ</a>
+		</div>
+	</form>
+	<footer>
+		<address>Copyright(C)20xx ぬる商事 Allright Reserved.</address>
+	</footer>
+</body>
+</html>

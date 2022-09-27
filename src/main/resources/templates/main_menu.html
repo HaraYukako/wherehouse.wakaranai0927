@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8"/>
+<link th:href="@{/css/reset.css}" href="../static/css/reset.css" rel="stylesheet"></link>
+<link th:href="@{/css/warehouse.css}" href="../static/css/warehouse.css" rel="stylesheet"></link>
+<title>ぬる商事 メインメニュー</title>
+</head>
+<body>
+	<header>
+		<h1>ぬる商事 社員用メインメニュー</h1>
+	</header>
+	<div>
+		<ul>
+			<li><a th:href="@{/goods}">本社業務（商品管理）</a></li>
+			<li><a th:href="@{/inventory}">倉庫業務（在庫管理）</a></li>
+		</ul>
+	</div>
+	<footer>
+		<address>Copyright(C)20xx ぬる商事 Allright Reserved.</address>
+	</footer>
+</body>
+</html>

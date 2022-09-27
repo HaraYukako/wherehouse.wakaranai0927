@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8"/>
+<link th:href="@{/css/reset.css}" href="../../static/css/reset.css" rel="stylesheet"></link>
+<link th:href="@{/css/warehouse.css}" href="../../static/css/warehouse.css" rel="stylesheet"></link>
+<title>商品登録画面（確認）</title>
+</head>
+<body>
+	<header>
+		<h1>ぬる商事 本社</h1>
+	</header>
+	<form method="post" th:action="@{/goods/create/complete}" th:object="${goods}">
+		<p>
+			以下の商品を登録します。<br/>よろしいですか？
+		</p>
+		<br/>
+		<table>
+			<tr>
+				<th>商品コード</th>
+				<td th:text="*{code}">100</td>
+			</tr>
+			<tr>
+				<th>商品名</th>
+				<td th:text="*{name}">鉛筆</td>
+			</tr>
+			<tr>
+				<th>価格</th>
+				<td th:text="*{price}">300</td>
+			</tr>
+		</table>
+		<div>
+			<br/>
+			<input type="submit" value="戻る" th:formaction="@{/goods/create/input}" formmethod="get"/>
+			<input type="submit" value="登録"/> <br/>
+			<br/><a th:href="@{/goods}">本社メニューへ</a>
+		</div>
+	</form>
+	<footer>
+		<address>Copyright(C)20xx ぬる商事 Allright Reserved.</address>
+	</footer>
+</body>
+</html>
