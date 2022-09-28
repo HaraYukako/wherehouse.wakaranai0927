@@ -1,0 +1,8 @@
+log\Sample.class
+com\example\goods\business\repository\GoodsRepositoryTest.class
+log\LogTest.class
+com\example\goods\business\service\GoodsServiceTest.class
+com\example\inventory\business\repository\InventoryRepositoryTest.class
+com\example\inventory\business\service\InventoryServiceTest.class
+com\example\goods\business\repository\GoodsRepositoryMock.class
+com\example\goods\business\service\GoodsServiceMockTest.class
