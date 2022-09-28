@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8"/>
+<link th:href="@{/css/reset.css}" href="../../static/css/reset.css" rel="stylesheet"></link>
+<link th:href="@{/css/warehouse.css}" href="../../static/css/warehouse.css" rel="stylesheet"></link>
+<title>入荷画面（確認）</title>
+</head>
+<body>
+	<header>
+		<h1>ぬる商事 倉庫</h1>
+	</header>
+	<form method="post" th:action="@{/inventory/receiving_order/complete}" th:object="${receivingShipmentOrder}">
+		<p>
+			以下の商品コードの在庫商品を数量分、入荷します。<br/> よろしいですか？
+		</p>
+		<br/>
+		<table>
+			<tr>
+				<th>商品コード</th>
+				<td th:text="*{goodsCode}">100</td>
+			</tr>
+			<tr>
+				<th>数量</th>
+				<td th:text="*{quantity}">10</td>
+			</tr>
+		</table>
+		<div>
+			<br/>
+			<input type="submit" value="戻る" th:formaction="@{/inventory/receiving_order/input}" formmethod="get"/>
+			<input type="submit" value="入荷" />
+			<br/>
+			<br/><a th:href="@{/inventory}">倉庫メニューへ</a>
+		</div>
+	</form>
+	<footer>
+		<address>Copyright(C)20xx ぬる商事 Allright Reserved.</address>
+	</footer>
+</body>
+</html>

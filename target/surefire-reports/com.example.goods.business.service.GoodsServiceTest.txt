@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.example.goods.business.service.GoodsServiceTest
 -------------------------------------------------------------------------------
-Tests run: 16, Failures: 0, Errors: 16, Skipped: 0, Time elapsed: 13.472 s <<< FAILURE! - in com.example.goods.business.service.GoodsServiceTest
-testCanDeleteGoods_異常系_存在しない商品コード  Time elapsed: 0.001 s  <<< ERROR!
+Tests run: 16, Failures: 0, Errors: 16, Skipped: 0, Time elapsed: 12.403 s <<< FAILURE! - in com.example.goods.business.service.GoodsServiceTest
+testCanDeleteGoods_異常系_存在しない商品コード  Time elapsed: 0 s  <<< ERROR!
 java.lang.IllegalStateException: Failed to load ApplicationContext
 Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'goodsCreateController' defined in file [C:\pleiades\workspace\17.Web.Warehouse3wakaranai\target\classes\com\example\goods\web\controller\GoodsCreateController.class]: Instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.example.goods.web.controller.GoodsCreateController
 Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.example.goods.web.controller.GoodsCreateController
@@ -22,17 +22,17 @@ java.lang.IllegalStateException: Failed to load ApplicationContext
 Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'goodsCreateController' defined in file [C:\pleiades\workspace\17.Web.Warehouse3wakaranai\target\classes\com\example\goods\web\controller\GoodsCreateController.class]: Instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.example.goods.web.controller.GoodsCreateController
 Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.example.goods.web.controller.GoodsCreateController
 
-testCreateGoods_正常系  Time elapsed: 0.004 s  <<< ERROR!
+testCreateGoods_正常系  Time elapsed: 0 s  <<< ERROR!
 java.lang.IllegalStateException: Failed to load ApplicationContext
 Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'goodsCreateController' defined in file [C:\pleiades\workspace\17.Web.Warehouse3wakaranai\target\classes\com\example\goods\web\controller\GoodsCreateController.class]: Instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.example.goods.web.controller.GoodsCreateController
 Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.example.goods.web.controller.GoodsCreateController
 
-testFindGoods_異常系_存在しない商品コード  Time elapsed: 0.002 s  <<< ERROR!
+testFindGoods_異常系_存在しない商品コード  Time elapsed: 0 s  <<< ERROR!
 java.lang.IllegalStateException: Failed to load ApplicationContext
 Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'goodsCreateController' defined in file [C:\pleiades\workspace\17.Web.Warehouse3wakaranai\target\classes\com\example\goods\web\controller\GoodsCreateController.class]: Instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.example.goods.web.controller.GoodsCreateController
 Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.example.goods.web.controller.GoodsCreateController
 
-testCreateGoods_異常系_登録済みの商品コード  Time elapsed: 0.001 s  <<< ERROR!
+testCreateGoods_異常系_登録済みの商品コード  Time elapsed: 0 s  <<< ERROR!
 java.lang.IllegalStateException: Failed to load ApplicationContext
 Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'goodsCreateController' defined in file [C:\pleiades\workspace\17.Web.Warehouse3wakaranai\target\classes\com\example\goods\web\controller\GoodsCreateController.class]: Instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.example.goods.web.controller.GoodsCreateController
 Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.example.goods.web.controller.GoodsCreateController
@@ -57,7 +57,7 @@ java.lang.IllegalStateException: Failed to load ApplicationContext
 Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'goodsCreateController' defined in file [C:\pleiades\workspace\17.Web.Warehouse3wakaranai\target\classes\com\example\goods\web\controller\GoodsCreateController.class]: Instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.example.goods.web.controller.GoodsCreateController
 Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.example.goods.web.controller.GoodsCreateController
 
-testDeleteGoods_異常系_存在しない商品コード  Time elapsed: 0.006 s  <<< ERROR!
+testDeleteGoods_異常系_存在しない商品コード  Time elapsed: 0 s  <<< ERROR!
 java.lang.IllegalStateException: Failed to load ApplicationContext
 Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'goodsCreateController' defined in file [C:\pleiades\workspace\17.Web.Warehouse3wakaranai\target\classes\com\example\goods\web\controller\GoodsCreateController.class]: Instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.example.goods.web.controller.GoodsCreateController
 Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.example.goods.web.controller.GoodsCreateController
@@ -67,7 +67,7 @@ java.lang.IllegalStateException: Failed to load ApplicationContext
 Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'goodsCreateController' defined in file [C:\pleiades\workspace\17.Web.Warehouse3wakaranai\target\classes\com\example\goods\web\controller\GoodsCreateController.class]: Instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.example.goods.web.controller.GoodsCreateController
 Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.example.goods.web.controller.GoodsCreateController
 
-testDeleteGoods_正常系  Time elapsed: 0.001 s  <<< ERROR!
+testDeleteGoods_正常系  Time elapsed: 0 s  <<< ERROR!
 java.lang.IllegalStateException: Failed to load ApplicationContext
 Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'goodsCreateController' defined in file [C:\pleiades\workspace\17.Web.Warehouse3wakaranai\target\classes\com\example\goods\web\controller\GoodsCreateController.class]: Instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.example.goods.web.controller.GoodsCreateController
 Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.example.goods.web.controller.GoodsCreateController

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8"/>
+<link th:href="@{/css/reset.css}" href="../../static/css/reset.css" rel="stylesheet"></link>
+<link th:href="@{/css/warehouse.css}" href="../../static/css/warehouse.css" rel="stylesheet"></link>
+<title>商品管理：メニュー画面</title>
+</head>
+<body>
+	<header>
+		<h1>ぬる商事 本社</h1>
+	</header>
+	<div>
+		<ul>
+			<li><a th:href="@{/goods/create/input}">商品登録</a></li>
+			<li><a th:href="@{/goods/list}">商品一覧</a></li>
+			<li><a th:href="@{/goods/find/input}">商品検索</a></li>
+			<li><a th:href="@{/goods/delete/input}">商品削除</a></li>
+		</ul>
+	</div>
+	<div>
+		<br/>
+		<a th:href="@{/}">ぬる商事メインメニューへ</a>
+	</div>
+	<footer>
+		<address>Copyright(C)20xx ぬる商事 Allright Reserved.</address>
+	</footer>
+</body>
+</html>
