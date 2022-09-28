@@ -10,9 +10,6 @@
 	<artifactId>17.Web.Warehouse</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<properties>
-	<log4j.version>2.3</log4j.version>
-</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.mybatis.spring.boot</groupId>
@@ -101,16 +98,22 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<Junit.version>4.12</Junit.version>
+			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
-		<!-- <dependency>
+		<dependency>
 			<groupId>org.easymock</groupId>
 			<artifactId>easymock</artifactId>
-			<easymock.version>3.4</easymock.version>
+			<version>${easymock.version}</version>
 			<scope>test</scope>
-		</dependency> -->
+		</dependency>
 		</dependencies>
+		<properties>
+			<!-- Junit Properties -->
+		<Junit.version>4.12</Junit.version>
+		<easymock.version>3.4</easymock.version>
+		<log4j.version>2.3</log4j.version>
+		</properties>
 	<build>
 		<plugins>
 			<plugin>
