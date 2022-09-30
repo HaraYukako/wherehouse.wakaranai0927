@@ -1,1 +1,3 @@
-2022/09/28 09:52:31.857 [INFO  ][background-preinit] org.hibernate.validator.internal.util.Version.<clinit> :HV000001: Hibernate Validator 6.0.18.Final
+2022/09/30 09:18:23.851 [INFO  ][background-preinit] org.hibernate.validator.internal.util.Version.<clinit> :HV000001: Hibernate Validator 6.0.18.Final
+2022/09/30 09:20:47.423 [WARN  ][http-nio-8081-exec-10] com.example.inventory.web.controller.ReceivingOrderController.confirm :org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'receivingShipmentOrder' on field 'quantity': rejected value [null]; codes [NotNull.receivingShipmentOrder.quantity,NotNull.quantity,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [receivingShipmentOrder.quantity,quantity]; arguments []; default message [quantity]]; default message [must not be null]
