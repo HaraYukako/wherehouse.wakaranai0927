@@ -3,7 +3,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.2.3.RELEASE</version>
+		<version>2.4.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>17.Web.Warehouse</groupId>
@@ -118,7 +118,7 @@
 		</dependencies>
 		<properties>
 			<!-- Junit Properties -->
-		<Junit.version>5.2.0</Junit.version>
+		<Junit.version>4.12</Junit.version>
 		<easymock.version>3.4</easymock.version>
 		<log4j.version>2.3</log4j.version>
 		</properties>
